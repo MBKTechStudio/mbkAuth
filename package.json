@@ -1,0 +1,24 @@
+{
+  "name": "mbkauth",
+  "version": "1.0.0",
+  "description": "MBKTechStudio's reusable authentication system for Node.js applications.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MBKTechStudio/mbkAuth.git"
+  },
+  "keywords": [
+    "login",
+    "authentication",
+    "nodejs"
+  ],
+  "author": "Muhammad Bin khalid",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/MBKTechStudio/mbkAuth/issues"
+  },
+  "homepage": "https://github.com/MBKTechStudio/mbkAuth/blob/main/README.md"
+}
