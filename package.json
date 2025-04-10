@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "MBKTechStudio's reusable authentication system for Node.js applications.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,5 +25,14 @@
   "bugs": {
     "url": "https://github.com/MBKTechStudio/mbkAuth/issues"
   },
-  "homepage": "https://github.com/MBKTechStudio/mbkAuth/blob/main/README.md"
+  "homepage": "https://github.com/MBKTechStudio/mbkAuth/blob/main/README.md",
+  "dependencies": {
+    "connect-pg-simple": "^10.0.0",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "express-session": "^1.18.1",
+    "node-fetch": "^3.3.2",
+    "pg": "^8.14.1"
+  }
 }
