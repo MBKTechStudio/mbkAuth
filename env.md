@@ -1,5 +1,7 @@
 # Configuration Guide
 
+[<- Back](README.md)
+
 ## reCAPTCHA Settings
 ```properties
 RECAPTCHA_SECRET_KEY=123

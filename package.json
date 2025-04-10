@@ -1,6 +1,6 @@
 {
   "name": "mbkauth",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "MBKTechStudio's reusable authentication system for Node.js applications.",
   "main": "index.js",
   "type": "module",
@@ -27,7 +27,7 @@
     "@MBKTechStudio:registry": "https://npm.pkg.github.com"
   },
   "author": "Muhammad Bin khalid",
-  "license": "AGPL-3.0",
+  "license": "Mozilla Public License 2.0",
   "bugs": {
     "url": "https://github.com/MBKTechStudio/mbkAuth/issues"
   },
