@@ -15,6 +15,9 @@
     "authentication",
     "nodejs"
   ],
+  "publishConfig": {
+    "@MBKTechStudio:registry": "https://npm.pkg.github.com"
+  },
   "author": "Muhammad Bin khalid",
   "license": "AGPL-3.0",
   "bugs": {
