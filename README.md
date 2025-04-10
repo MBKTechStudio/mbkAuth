@@ -1,5 +1,20 @@
 # mbkAuth
 
+## Table of Contents
+
+- [Introduction](#mbkauth)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+  - [Basic Setup](#basic-setup)
+- [API Endpoints](#api-endpoints)
+  - [Login](#login)
+  - [Logout](#logout)
+  - [Terminate All Sessions](#terminate-all-sessions)
+- [Database Structure](#database-structure)
+- [License](#license)
+- [Contact & Support](#contact--support)
+
 `mbkAuth` is a reusable authentication system for Node.js applications, designed to simplify session management, user authentication, and role-based access control. It integrates seamlessly with PostgreSQL and supports features like Two-Factor Authentication (2FA), session restoration, and reCAPTCHA verification.
 
 ## Features
@@ -16,21 +31,18 @@
 Install the package via npm:
 
 ```bash
-npm install @MBKTechStudio/mbkauth
-```
-or
-```bash
 npm install mbkauth
 ```
 
 ## Usage
-Basic Setup
+### Basic Setup
 1. Import and configure the router in your Express application:
 ```javascript
 import express from "express";
-import mbkAuthRouter from "@MBKTechStudio/mbkauth";
+import mbkAuthRouter from "mbkauth";
 
 const app = express();
+
 app.use(mbkAuthRouter);
 
 app.listen(3000, () => {
@@ -50,7 +62,8 @@ MBKAUTH_TWO_FA_ENABLE=false
 ```
 
 ## API Endpoints
-Login
+
+### Login
 
 **POST** `/api/mbkauth/login`
 - Request Body:
@@ -65,6 +78,7 @@ Login
   - `401`: Unauthorized (e.g., invalid credentials or 2FA token).
   - `500`: Internal server error.
 
+### Logout
 
 **POST** `/api/mbkauth/logout`
 - Response:
@@ -72,7 +86,7 @@ Login
   - `400`: User not logged in.
   - `500`: Internal server error.
 
-
+### Terminate All Sessions
 
 **POST** `/api/mbkauth/terminateAllSessions`
 - Authentication: Requires a valid `Main_SECRET_TOKEN` in the `Authorization` header.
@@ -81,6 +95,17 @@ Login
   - `500`: Internal server error.
   - 
   
+
+## Database Structure
+
+This project utilizes three primary tables:
+
+1. **User**: Stores the main user information.
+2. **sess**: Contains session-related data for users.
+3. **TwoFA**: Saves the Two-Factor Authentication (2FA) secrets for users.
+
+For detailed information about table columns, schema, and queries to create these tables, refer to the [Database Guide (docs/db.md)](docs/db.md).
+
 ## License
 This project is licensed under the `Mozilla Public License 2.0`. See the [LICENSE](./LICENSE) file for details.
 
