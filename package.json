@@ -12,10 +12,16 @@
     "type": "git",
     "url": "git+https://github.com/MBKTechStudio/mbkAuth.git"
   },
+  "engines": {
+    "node": ">=14.0.0"
+  },
   "keywords": [
     "login",
     "authentication",
-    "nodejs"
+    "nodejs",
+    "express",
+    "session",
+    "security"
   ],
   "publishConfig": {
     "@MBKTechStudio:registry": "https://npm.pkg.github.com"
@@ -32,6 +38,7 @@
     "dotenv": "^16.4.7",
     "express": "^5.1.0",
     "express-session": "^1.18.1",
+    "joi": "^17.13.3",
     "node-fetch": "^3.3.2",
     "pg": "^8.14.1"
   }
